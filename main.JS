@@ -1,29 +1,22 @@
-function add7(x) {
-    console.log(x + 7);
-}
-add7(12);
+const computerPlay = ["Rock", "Paper", "Scissors"];
 
-function computerPlay {
-    function to randomly return rock paper scissors RANDOMLY RETURN FROM MULTIPLE STRINGS CODE
-    console.log(computerPlay(???, ???(if needed)));
-}
+const random = Math.floor(Math.random() * computerPlay.length);
+console.log(random, computerPlay[random]);
 
-/* 1. First of all the computer makes a selection of rock, paper or scissors. Random. Does it need a return statement? 
-Will use the console to check if it is random? leave rest of code until this confirmed.
-       LOOK UP: Coding three different parameters within this function (rock, paper, scissors). 
-       NO VALUES needed at this point. 
-*/
+
+
+/*
 function playRound(playerSelection, computerSelection) {
     // your code here!
     //}
 
-    const playerSelection = "own imput rock";
+ /*   const playerSelection = "own imput rock";
     /* Player types either rock paper or scissors.
-    FIRST PART OF FUNCTION: User types in either rock, paper or scissors. Can be case insensitive.*/
+    FIRST PART OF FUNCTION: User types in either rock, paper or scissors. Can be case insensitive.
     const computerSelection = computerPlay();
-    /*console.log(playRound(playerSelection, computerSelection));*/
+    /*console.log(playRound(playerSelection, computerSelection));
 
-function bothSelected /* (MAYBE THIS DOESN'T NEED TO BE IT'S OWN FUNCTION? will declare round winner)*/  this has two paramenters 
+function bothSelected /* (MAYBE THIS DOESN'T NEED TO BE IT'S OWN FUNCTION? will declare round winner)  this has two paramenters 
 //    1. playerSelection
         make this selection case InSenSitive
 //    2. computerSelection 
@@ -34,7 +27,7 @@ function bothSelected /* (MAYBE THIS DOESN'T NEED TO BE IT'S OWN FUNCTION? will 
                 if playeerselection scissors and computerselection rock etc
                         LOOK UP: COMPARING VALUES OF TWO STRINGS AND ASSIGNING WHICH IS GREATER?
             
-SECOND PART OF FUNCTION: declares a winner from the third part (displays a winning message (string)).*/
+SECOND PART OF FUNCTION: declares a winner from the third part (displays a winning message (string)).
 
 Winner of the round is delcared with string "You Lose! (Object) beats (object)"
 //}
@@ -52,4 +45,4 @@ function game()
      }
 /*Final function game() is to see what round (of 5) that it is (use loops to achieve this). 
 Will keep a tab on the score
-Will declare the winner afterwards.*/
+    Will declare the winner afterwards.*/
