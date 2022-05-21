@@ -1,4 +1,4 @@
-const computerPlay = ["Rock", "Paper", "Scissors"];
+const computerPlay = ["rock", "paper", "scissors"];
 
 const random = Math.floor(Math.random() * computerPlay.length);
 console.log(computerPlay[random]);
@@ -11,12 +11,35 @@ if (playRound === 'rock' || playRound === 'paper' || playRound === 'scissors') {
     console.log("Error!");
   }
   console.log(playRound);
+
+let selectBoth = [playRound, computerPlay]
+  if (playRound == "rock" && computerPlay == "scissors" || playRound == "scissors" && computerPlay == "paper" || playRound == "paper" && computerPlay == "rock") {
+    message = "Congratulations! You win!";
+  }
+  else if (playRound == "scissors" && computerPlay == "scissors" || playRound == "paper" && computerPlay == "paper" || playRound == "rock" && computerPlay == "rock") {
+    message = "It's a draw!";
+  } else {
+    message = "Computer Wins!";
+
+console.log(selectBoth);
+
+  }
 /*
 let playRound = prompt("Rock, Paper or Scissors?");
 const playerSelection = playRound.length;
 const computerSelection = computerPlay.length;
-console.log(playRound, computerPlay);
+console.log(playRound, computerPlay); */
 
+/*
+function bothSelected() { 
+if (playRound === rock && computerPlay === scissors || playRound === scissors && computerPlay === paper || playRound === paper && computerPlay === rock) {
+    greeting = "Congratulations! You win!";
+if (playRound === scissors && computerPlay === scissors || playRound === paper && computerPlay === paper || playRound === rock && computerPlay === rock) {
+        greeting = "It's a draw!";
+  } else {
+    greeting = "Computer Wins!";
+  }
+console.log(bothSelected);
 
 /*
 function playRound = prompt(question, rock, paper, scissors) {
@@ -34,58 +57,10 @@ function playRound = prompt(question, rock, paper, scissors) {
 */
 
 
-/*
-    if (playRound == Rock && computerPlay == Rock) {
-
-        function () { alert("You chose rock."); },
-        }
-      
-    } else if (playRound == Rock && computerPlay == Scissors) {
-
-        function () { alert("You chose paper."); },
-
-    } else if (playRound == Rock && computerPlay == Paper) {
-
-            function function() { alert("You chose scissors."); }
-  );
 
 
 
 /*
-
-    playerSelection = prompt("Rock, paper or scissors?: ");
-    alert("You chose " + playerSelection);
-    computerSelection = computerPlay();
-    alert("Computer chose " + computerSelection);
-    console.log(playRound(playerSelection, computerSelection));
-}
-
- /*   const playerSelection = "own imput rock";
-    /* Player types either rock paper or scissors.
-    FIRST PART OF FUNCTION: User types in either rock, paper or scissors. Can be case insensitive.
-    const computerSelection = computerPlay();
-    /*console.log(playRound(playerSelection, computerSelection));
-
-
-
-/*const computerPlay = ["Rock", "Paper", "Scissors"];
-
-const random = Math.floor(Math.random() * computerPlay.length);
-console.log(random, computerPlay[random]);
-
-*/
-
-/*
-function playRound(playerSelection, computerSelection) {
-    // your code here!
-    //}
-
- /*   const playerSelection = "own imput rock";
-    /* Player types either rock paper or scissors.
-    FIRST PART OF FUNCTION: User types in either rock, paper or scissors. Can be case insensitive.
-    const computerSelection = computerPlay();
-    /*console.log(playRound(playerSelection, computerSelection));
-
 function bothSelected /* (MAYBE THIS DOESN'T NEED TO BE IT'S OWN FUNCTION? will declare round winner)  this has two paramenters 
 //    1. playerSelection
         make this selection case InSenSitive
