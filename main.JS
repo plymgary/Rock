@@ -1,9 +1,79 @@
 const computerPlay = ["Rock", "Paper", "Scissors"];
 
 const random = Math.floor(Math.random() * computerPlay.length);
+console.log(computerPlay[random]);
+
+let playRound = prompt("Rock, paper or scissors?")
+playRound = playRound.toLowerCase();
+if (playRound === 'rock' || playRound === 'paper' || playRound === 'scissors') {
+ 
+} else {
+    console.log("Error!");
+  }
+  console.log(playRound);
+/*
+let playRound = prompt("Rock, Paper or Scissors?");
+const playerSelection = playRound.length;
+const computerSelection = computerPlay.length;
+console.log(playRound, computerPlay);
+
+
+/*
+function playRound = prompt(question, rock, paper, scissors) {
+    if (confirm(question)) yes();
+    else no();
+  }
+
+  playRound(
+    "Rock, Paper, Scissors?",
+    function() { alert("You chose rock."); },
+    function() { alert("You chose paper."); },
+    function() { alert("You chose scissors."); }
+  );
+
+*/
+
+
+/*
+    if (playRound == Rock && computerPlay == Rock) {
+
+        function () { alert("You chose rock."); },
+        }
+      
+    } else if (playRound == Rock && computerPlay == Scissors) {
+
+        function () { alert("You chose paper."); },
+
+    } else if (playRound == Rock && computerPlay == Paper) {
+
+            function function() { alert("You chose scissors."); }
+  );
+
+
+
+/*
+
+    playerSelection = prompt("Rock, paper or scissors?: ");
+    alert("You chose " + playerSelection);
+    computerSelection = computerPlay();
+    alert("Computer chose " + computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
+}
+
+ /*   const playerSelection = "own imput rock";
+    /* Player types either rock paper or scissors.
+    FIRST PART OF FUNCTION: User types in either rock, paper or scissors. Can be case insensitive.
+    const computerSelection = computerPlay();
+    /*console.log(playRound(playerSelection, computerSelection));
+
+
+
+/*const computerPlay = ["Rock", "Paper", "Scissors"];
+
+const random = Math.floor(Math.random() * computerPlay.length);
 console.log(random, computerPlay[random]);
 
-
+*/
 
 /*
 function playRound(playerSelection, computerSelection) {
