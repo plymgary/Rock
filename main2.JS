@@ -11,7 +11,7 @@ if (playRound === 'rock' || playRound === 'paper' || playRound === 'scissors') {
   }
   console.log(playRound);
 
-function selectBoth() {
+let selectBoth
   if (playRound === "rock" && computerPlay === "scissors" || playRound === "scissors" && computerPlay === "paper" || playRound === "paper" && computerPlay === "rock") {
     greeting = "Congratulations! You win!";
   }
@@ -19,9 +19,8 @@ function selectBoth() {
     greeting = "It's a draw!";
   } else {
     greeting = "Computer Wins!";
-
+    
 console.log(selectBoth);
-  }
   }
 /*
 let playRound = prompt("Rock, Paper or Scissors?");
