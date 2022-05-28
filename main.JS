@@ -1,93 +1,31 @@
-function playRound(playerSelection, computerSelection,result) {
-  const computerChoice = ["rock", "paper", "scissors"];
-  const random = Math.floor(Math.random() * computerChoice.length);
-  computerSelection = computerChoice[random];
-  playerSelection = prompt("Rock, paper or scissors?")
-  playerSelection = playerSelection.toLowerCase();
-  if (playerSelection == "rock" && computerSelection == "scissors" || playerSelection == "scissors" && computerSelection === "paper" || playerSelection == "paper" && computerSelection == "rock") {
-  result = 'You Win!';
-} else if (playerSelection == "scissors" && computerSelection == "scissors" || playerSelection == "paper" && computerSelection === "paper" || playerSelection == "rock" && computerSelection == "rock") {
-  result = ("It's a draw!");
-} else {
-  result = ("Computer Wins!");
-  };
-console.log(playerSelection + " " + computerSelection + " " + result);
+const playerSelectionChoice = prompt("Rock, paper or scissors?")
+const playerSelection = playerSelectionChoice.toLowerCase();
+const computerSelectionChoice = ["rock", "paper", "scissors"];
+const computerSelection = computerSelectionChoice[Math.floor(Math.random() * computerSelectionChoice.length)];
 
+function computerChoice() {
+  let result = computerSelection;
+  return computerSelection;
 }
 
-playRound();
+console.log (computerChoice());
 
-/*
-function playRound(playerSelection, computerSelection) {
-  const computerChoice = ["rock", "paper", "scissors"];
-  const random = Math.floor(Math.random() * computerChoice.length);
-  computerSelection = computerChoice[random];
-  playerSelection = prompt("Rock, paper or scissors?")
-  playerSelection = playerSelection.toLowerCase();
-console.log(playerSelection + " " + computerSelection);
-
+function playerChoice() {
+  let result = playerSelection;
+  return playerSelection;
 }
 
-playRound();
-
-let playerSelection = playRound(playerSelection)
-let computerSelection = playRound(computerSelection)
+console.log (playerChoice());
 
 
-
-function roundResults(result){ 
-if (playerSelection == "rock" && computerSelection == "scissors" || playerSelection == "scissors" && computerSelection === "paper" || playerSelection == "paper" && computerSelection == "rock") {
-  result = 'You Win!';
-} else if (playerSelection == "scissors" && computerSelection == "scissors" || playerSelection == "paper" && computerSelection === "paper" || playerSelection == "rock" && computerSelection == "rock") {
-  result = ("It's a draw!");
-} else {
-  result = ("Computer Wins!");
-  };
-console.log(result);
+function roundResults() {
+  if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock") {
+    return ('You Win!');
+  } else if (playerSelection === "scissors" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "paper" || playerSelection === "rock" && computerSelection === "rock") {
+    return ("It's a draw!");
+  } else {
+    return ("Computer Wins!");
+    };
 }
 
-roundResults();
-
-
-
-/*
-function roundResult() {
-playRound();
-let result;
-if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock") {
-  result = 'positive';
-} else {
-  result = 'NOT positive';
-}
-return result;
-console.log(roundResult)
-}
-
-
-//}
-/*
-  computerSelection = code from previous computer go
-  if and else here
-  alert = ("Congratulations! You win!");
-}
-
-ALL CODE IN THIS BLOCK WORKS.
-function playRound(playerSelection, computerSelection) {
-  playerSelection = prompt("Rock, paper or scissors?")
-  playerSelection = playerSelection.toLowerCase();
-console.log(playerSelection + " " + computerSelection)
-}
-playRound();
-
-//END OF WORKING BLOCK
-/*
-playRound = prompt("Rock, paper or scissors?")
-playRound = playRound.toLowerCase();
-if (playRound === 'rock' || playRound === 'paper' || playRound === 'scissors') {
-} else {
-  console.log("Error!");
-}
-console.log(playRound);
-
-
-playRound('Goat');*/
+console.log(roundResults());
