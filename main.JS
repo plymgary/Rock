@@ -1,7 +1,10 @@
-const playerSelectionChoice = prompt("Rock, paper or scissors?")
+const playerSelectionChoice = prompt("Rock, paper or scissors?");
 const playerSelection = playerSelectionChoice.toLowerCase();
 const computerSelectionChoice = ["rock", "paper", "scissors"];
 const computerSelection = computerSelectionChoice[Math.floor(Math.random() * computerSelectionChoice.length)];
+let playerScore = 0;
+let computerScore = 0;
+let loopResults = roundResults();
 
 function computerChoice() {
   let result = computerSelection;
@@ -30,19 +33,15 @@ function roundResults() {
 
 console.log(roundResults());
 
-function game() {
-  let playerScore = 0;
-  let computerScore = 0;
-  let loopResults = roundResults();
 
+function game() {
   for (let counter= 0; counter < 5; counter++) {
     roundResults();
-
     if (loopResults === 'You Win!') {
     ++ playerScore;
     } else if (loopResults === "Computer Wins!") {
     ++ computerScore;
-  } 
+  }
 }
 if (playerScore > computerScore) {
   return ('You win ' + playerScore + ' to ' + computerScore + '.');
